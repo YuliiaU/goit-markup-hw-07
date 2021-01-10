@@ -1,0 +1,121 @@
+/* шапка */
+
+.header {
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+}
+
+/* навигация */
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    position: relative;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+        color: $accent;
+    }
+}
+
+
+.site-nav .link.current::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent;
+}
+
+.site-nav .link.current {
+    color: $accent;
+}
+
+
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item + .item,
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
+/* контакты */
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    
+}
+
+.contacts .contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primery-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    &:hover,
+    &:focus  {
+        color: $accent;
+    }
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $icon-color;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $icon-color;
+
+}
+
+.link-icon {
+    
+    fill: currentColor;
+}
