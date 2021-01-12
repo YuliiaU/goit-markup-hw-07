@@ -1,7 +1,7 @@
 body {
     background-color: $white;
     color: $primery-text-color;
-    font-family: $text-font,sans-serif;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 400;
 }
@@ -17,6 +17,17 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+/* контейнер */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    
 }
 
 /* секция*/
